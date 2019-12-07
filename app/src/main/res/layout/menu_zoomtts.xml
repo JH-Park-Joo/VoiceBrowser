@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_low"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/dialog_white"
+        android:weightSum="1">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_zoomin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            app:backgroundTint="@color/colorOldBack"
+            app:srcCompat="@drawable/zoomin" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_zoomout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            app:backgroundTint="@color/colorOldBack"
+            app:srcCompat="@drawable/zoomout" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_reversal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            app:backgroundTint="@color/colorOldBack"
+            app:srcCompat="@drawable/reversal" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/dialog_white"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tv_repeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="음성"
+                android:textColor="@color/colorOldBack"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/btn_pitch_low"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_tts_action"
+                android:text="▼"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_pitch_normal"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_tts_action"
+                android:text="0"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_pitch_high"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_tts_action"
+                android:text="▲"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tv_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="속도"
+                android:textColor="@color/colorOldBack"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/btn_rate_low"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_tts_action"
+                android:text="▼"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_rate_normal"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_tts_action"
+                android:text="0"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_rate_high"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_tts_action"
+                android:text="▲"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/dialog_white"
+        android:weightSum="1">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            app:backgroundTint="@color/colorOldBack"
+            app:srcCompat="@drawable/play" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            app:backgroundTint="@color/colorOldBack"
+            app:srcCompat="@drawable/pause" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            app:backgroundTint="@color/colorOldBack"
+            app:srcCompat="@drawable/stop" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/dialog_white"
+        android:weightSum="1">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_zoom_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            app:backgroundTint="@color/colorOldBack"
+            app:srcCompat="@drawable/previous" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_zoom_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            app:backgroundTint="@color/colorOldBack"
+            app:srcCompat="@drawable/cancel" />
+
+    </LinearLayout>
+
+</LinearLayout>

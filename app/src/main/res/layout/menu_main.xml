@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_low"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:id="@+id/ll_dialog">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:weightSum="1"
+        android:layout_marginTop="10dp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            app:backgroundTint="@color/colorOldBack"
+            app:borderWidth="0dp"
+            app:elevation="1dp"
+            app:fabSize="mini"
+            app:maxImageSize="70dp"
+            app:srcCompat="@drawable/choice" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:visibility="invisible"
+                app:backgroundTint="@color/colorOldBack"
+                app:srcCompat="@drawable/setting" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_bookmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                app:backgroundTint="@color/colorOldBack"
+                app:srcCompat="@drawable/bookmark"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:weightSum="1"
+        android:layout_marginBottom="10dp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            app:backgroundTint="@color/colorOldBack"
+            app:srcCompat="@drawable/previous" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            app:backgroundTint="@color/colorOldBack"
+            app:srcCompat="@drawable/home" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            app:backgroundTint="@color/colorOldBack"
+            app:srcCompat="@drawable/next" />
+    </LinearLayout>
+
+</LinearLayout>
